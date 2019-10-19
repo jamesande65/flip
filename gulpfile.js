@@ -119,7 +119,7 @@ gulp.task('images', function() {
 
 gulp.task('fonts', function() {
     return gulp.src(paths.src + paths.scss + paths.fonts + '/**/*.{eot,ttf,svg,otf,woff}')
-        .pipe(gulp.dest(paths.dest + path.css + paths.fonts))
+        .pipe(gulp.dest(paths.dest + "/css" + paths.fonts))
         .pipe(browserSync.stream());
 });
 
