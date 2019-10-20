@@ -233,6 +233,7 @@ button {
 .banner-block {
   display: flex;
   align-items: center;
+  border-radius: 0 0 100px 100px;
   .text-block {
     margin-right: 50px;
     flex-grow: 1;
