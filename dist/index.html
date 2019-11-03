@@ -137,6 +137,15 @@
 				c-1.906,1.903-2.855,4.093-2.855,6.564c0,2.477,0.949,4.667,2.855,6.57l14.274,14.271c1.903,1.905,4.093,2.854,6.567,2.854
 				c2.473,0,4.663-0.951,6.567-2.854l133.042-133.044c1.902-1.902,2.854-4.093,2.854-6.567S224.603,137.807,222.701,135.9z"/>
 		    </symbol>
+		    <symbol id="burger" viewBox="0 0 60.123 60.123">
+		        <path d="M57.124,51.893H16.92c-1.657,0-3-1.343-3-3s1.343-3,3-3h40.203c1.657,0,3,1.343,3,3S58.781,51.893,57.124,51.893z"/>
+		        <path d="M57.124,33.062H16.92c-1.657,0-3-1.343-3-3s1.343-3,3-3h40.203c1.657,0,3,1.343,3,3
+				C60.124,31.719,58.781,33.062,57.124,33.062z"/>
+		        <path d="M57.124,14.231H16.92c-1.657,0-3-1.343-3-3s1.343-3,3-3h40.203c1.657,0,3,1.343,3,3S58.781,14.231,57.124,14.231z"/>
+		        <circle cx="4.029" cy="11.463" r="4.029"/>
+		        <circle cx="4.029" cy="30.062" r="4.029"/>
+		        <circle cx="4.029" cy="48.661" r="4.029"/>
+		    </symbol>
 		</svg>
 		<div class="page__wrapper js-wrapper">
 			<header class="page__header">
@@ -145,12 +154,19 @@
 						<a href="/" class="logo">
 							<span>FLIP</span>
 						</a>
-						<ul class="menu">
-							<li class="active"><a href="#">О нас</a></li>
-							<li><a href="#">Категории</a></li>
-							<li><a href="#">Наша продукция</a></li>
-							<li><a href="#">Контакты</a></li>
-						</ul>
+						<div class="menu-block">
+							<div class="mob-menu js-mob-menu-button">
+								<svg class="icon burger">
+									<use xlink:href="#burger"></use>
+								</svg>
+							</div>
+							<ul class="menu js-mob-menu">
+								<li class="active"><a href="#about-us">О нас</a></li>
+								<li><a href="#our-works">Категории</a></li>
+								<li><a href="#production">Наша продукция</a></li>
+								<li><a href="#contacts">Контакты</a></li>
+							</ul>
+						</div>
 						<div class="socials">
 							<a href="https://www.instagram.com/flip.ukr/" target="_blank">
 								<svg class="icon instagram">
@@ -166,31 +182,32 @@
 				<section class="main-banner">
 					<div class="container">
 						<div class="banner-block">
-								<div class="text-block">
-									<h1 class="title banner-title">
-										Швейное производство “Flip”
-									</h1>
-									<div class="banner-text">
-										Индивидуальный пошив термосумок, рюкзаков, аптечек и сумок для любых
-										нужд с возможностью нанесения Вашего логотипа.
-									</div>
-									<div class="banner-bottom">
-										<span>
-											<svg class="icon smartphone">
-												<use xlink:href="#smartphone"></use>
-											</svg>
-											<span>+38(063)31-32-752</span>
-										</span>
-										<span>
-											<svg class="icon envelop">
-												<use xlink:href="#envelop"></use>
-											</svg>
-											<span>+38(063)31-32-752</span>
-										</span>
-									</div>
+							<div class="text-block">
+								<h1 class="title banner-title">
+									<span>Швейное производство “Flip”</span>
+								</h1>
+								<div class="banner-text">
+									Индивидуальный пошив термосумок, рюкзаков, аптечек и сумок для любых
+									нужд с возможностью нанесения Вашего логотипа.
 								</div>
+								<div class="banner-bottom">
+									<span>
+										<svg class="icon smartphone">
+											<use xlink:href="#smartphone"></use>
+										</svg>
+										<span>+38(063)31-32-752</span>
+									</span>
+									<span>
+										<svg class="icon envelop">
+											<use xlink:href="#envelop"></use>
+										</svg>
+										<span>zakaz.flip@ukr.net</span>
+									</span>
+								</div>
+							</div>
+							<div class="banner-right-block">
 								<div class="banner-slider js-banner-slider">
-									<div class="banner-slider-item">
+									<div class="banner-slider-item"	>
 										<img src="images/banner-img.jpg" class="image-block-item" alt="img">
 										<span><span>1</span>/3</span>
 									</div>
@@ -203,11 +220,18 @@
 										<span><span>3</span>/3</span>
 									</div>
 								</div>
-					</div>
-						<div class="next-screen"><svg class="icon arrow-down"><use xlink:href="#arrow-right"></use></svg></div>
+							</div>
+						</div>
+						<div class="next-screen">
+							<svg class="icon arrow-down">
+								<use xlink:href="#arrow-right">
+
+								</use>
+							</svg>
+						</div>
 					</div>
 				</section>
-				<section class="about-us">
+				<section id="about-us" class="about-us">
 					<div class="container">
 						<div class="about-us__block">
 							<div class="about-us__image">
@@ -215,7 +239,7 @@
 							</div>
 							<div class="about-us__text">
 								<h2 class="title">
-									О нас
+									<span>О нас</span>
 								</h2>
 								<div class="about-us__text-block">
 									Мы занимаемся производством и реализацией термосумок по индивидуальному заказу для служб доставок еды и напитков (пиццерий, шашлычных и тд), медицинских сумок для врачей скорой помощи и не только, аптечек, пляжных сумок, чехлов для автомобильных колес.
@@ -240,54 +264,108 @@
 						</div>
 					</div>
 				</section>
-				<section class="our-works">
+				<section id="our-works" class="our-works">
 					<div class="container">
 						<h2 class="title title-center">
-							Что мы можем сделать
+							<span>Что мы можем сделать</span>
 						</h2>
 						<div class="our-works__block">
 							<div class="our-works__block-item">
-								<img src="images/bag1.png"/>
-								<div class="our-works__block-item-text">
-									<span>ТЕРМОСУМКИ</span>
-									<div>Изготовление по индивидуальному заказу, согласно Ваших размеров: сумки-холодильники, сумки-термосы, сумки для пиццы, сумки для суши, термо-сумки. По Вашему желанию сумки могут быть, как с вертикальной. так и горизонтальной погрузкой. </div>
-								</div>
+								<div>
+                                    <img src="images/bag1.png"/>
+                                    <div class="our-works__block-item-text">
+                                        <span>ТЕРМОСУМКИ</span>
+                                        <p>Изготовление по индивидуальному заказу, согласно Ваших размеров: сумки-холодильники, сумки-термосы, сумки для пиццы, сумки для суши, термо-сумки. По Вашему желанию сумки могут быть, как с вертикальной. так и горизонтальной погрузкой. </p>
+                                    </div>
+                                </div>
 							</div>
 							<div class="our-works__block-item">
-								<img src="images/bag2.png"/>
-								<div class="our-works__block-item-text">
-									<span>ТЕРМОСУМКИ</span>
-									<div>Изготовление по индивидуальному заказу, согласно Ваших размеров: сумки-холодильники, сумки-термосы, сумки для пиццы, сумки для суши, термо-сумки. По Вашему желанию сумки могут быть, как с вертикальной. так и горизонтальной погрузкой. </div>
-								</div>
+								<div>
+                                    <img src="images/bag2.png"/>
+                                    <div class="our-works__block-item-text">
+                                        <span>для доставки</span>
+                                        <p>Изготавливаем сумки под заказ для сервисов доставки различных направлений общественого питания и других  сфер и сегментов рынка. </p>
+                                    </div>
+                                </div>
 							</div>
 							<div class="our-works__block-item">
-								<img src="images/bag3.png"/>
-								<div class="our-works__block-item-text">
-									<span>ТЕРМОСУМКИ</span>
-									<div>Изготовление по индивидуальному заказу, согласно Ваших размеров: сумки-холодильники, сумки-термосы, сумки для пиццы, сумки для суши, термо-сумки. По Вашему желанию сумки могут быть, как с вертикальной. так и горизонтальной погрузкой. </div>
-								</div>
+								<div>
+                                    <img src="images/bag3.png"/>
+                                    <div class="our-works__block-item-text">
+                                        <span>Рюкзаки</span>
+                                        <p>Можем изготовить по индивидуальному заказу рюкзаки, сумки для обуви и других личных вещей, принадлежностей,  с возможностью нанесения логотипа, с учетом Ваших пожеланий. </p>
+                                    </div>
+                                </div>
 							</div>
 							<div class="our-works__block-item">
-								<img src="images/bag4.png"/>
-								<div class="our-works__block-item-text">
-									<span>ТЕРМОСУМКИ</span>
-									<div>Изготовление по индивидуальному заказу, согласно Ваших размеров: сумки-холодильники, сумки-термосы, сумки для пиццы, сумки для суши, термо-сумки. По Вашему желанию сумки могут быть, как с вертикальной. так и горизонтальной погрузкой. </div>
-								</div>
+								<div>
+                                    <img src="images/bag4.png"/>
+                                    <div class="our-works__block-item-text">
+                                        <span>Медицинские сумки</span>
+                                        <p>У нас Вы можете заказать пошив медицинских сумок, сумок скорой помощи, сумок медсестры, сумок врача, сумок в поликлинику и других сумок для переноски и транспортировки медикаментов. </p>
+                                    </div>
+                                </div>
 							</div>
 							<div class="our-works__block-item">
-								<img src="images/bag5.png"/>
-								<div class="our-works__block-item-text">
-									<span>ТЕРМОСУМКИ</span>
-									<div>Изготовление по индивидуальному заказу, согласно Ваших размеров: сумки-холодильники, сумки-термосы, сумки для пиццы, сумки для суши, термо-сумки. По Вашему желанию сумки могут быть, как с вертикальной. так и горизонтальной погрузкой. </div>
-								</div>
+								<div>
+                                    <img src="images/bag5.png"/>
+                                    <div class="our-works__block-item-text">
+                                        <span>Автомобильные сумки</span>
+                                        <p>Для водителей и автолюбителей можем предложить изготовление по индивидуальному заказу автомобильных сумок: сумок в машину, чехлов для запаски, автохолодильников, сумок для ключей. </p>
+                                    </div>
+                                </div>
 							</div>
 							<div class="our-works__block-item">
-								<img src="images/bag6.png"/>
-								<div class="our-works__block-item-text">
-									<span>ТЕРМОСУМКИ</span>
-									<div>Изготовление по индивидуальному заказу, согласно Ваших размеров: сумки-холодильники, сумки-термосы, сумки для пиццы, сумки для суши, термо-сумки. По Вашему желанию сумки могут быть, как с вертикальной. так и горизонтальной погрузкой. </div>
-								</div>
+								<div>
+                                    <img src="images/bag6.png"/>
+                                    <div class="our-works__block-item-text">
+                                        <span>Печать принтов</span>
+                                        <p>Осуществляем печать принтов по Вашим эскизам на футболках, сумках, кепках, ветровках и т.д. Исходные изделия можем как отшить на нашем производстве, по Вашему дизайну, так и закупить шаблонные модели, согласно Ваших пожеланий. </p>
+                                    </div>
+                                </div>
 							</div>
+						</div>
+					</div>
+				</section>
+				<section id="production" class="works-slider__block">
+					<div class="container">
+						<h2 class="title title-center">
+							<span>Наши работы</span>
+						</h2>
+						<div class="works-slider js-works-slider">
+							<div class="works-slider-item">
+								<img src="images/bag1.png" class="image-block-item" alt="img">
+							</div>
+							<div class="works-slider-item">
+								<img src="images/bag2.png" class="image-block-item" alt="img">
+							</div>
+							<div class="works-slider-item">
+								<img src="images/bag3.png" class="image-block-item" alt="img">
+							</div>
+							<div class="works-slider-item">
+								<img src="images/bag4.png" class="image-block-item" alt="img">
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="contacts" class="contacts">
+					<div class="container">
+						<h2 class="title title-center">
+							<span>Как с нами связаться</span>
+						</h2>
+						<div class="contacts__block">
+							<div class="contacts__block-phone">
+                                <span class="title">Телефон</span>
+                                <span class="info">+38 (063) 31-32-752</span>
+                            </div>
+							<div class="contacts__block-email">
+                                <span class="title">Почта</span>
+                                <span class="info">zakaz.flip@ukr.net</span>
+                            </div>
+							<div class="contacts__block-address">
+                                <span class="title">Адрес</span>
+                                <span class="info">Украина, Харьков, ул. Киргизская, 19</span>
+                            </div>
 						</div>
 					</div>
 				</section>
@@ -300,12 +378,14 @@
 							<a href="/" class="logo">
 								<span>FLIP</span>
 							</a>
-							<ul class="menu">
-								<li class="active"><a href="#">О нас</a></li>
-								<li><a href="#">Категории</a></li>
-								<li><a href="#">Наша продукция</a></li>
-								<li><a href="#">Контакты</a></li>
-							</ul>
+							<div class="menu-block">
+								<ul class="menu">
+									<li class="active"><a href="#about-us">О нас</a></li>
+									<li><a href="#our-works">Категории</a></li>
+									<li><a href="#production">Наша продукция</a></li>
+									<li><a href="#contacts">Контакты</a></li>
+								</ul>
+							</div>
 							<div class="socials">
 								<a href="https://www.instagram.com/flip.ukr/" target="_blank">
 									<svg class="icon instagram">
