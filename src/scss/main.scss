@@ -270,6 +270,7 @@ section {
   display: flex;
   span {
     position: relative;
+    text-shadow: 1px 1px 1px white;
     &:after {
       content: '';
       display: inline-block;
@@ -318,6 +319,9 @@ section {
   svg {
     margin-right: 25px;
   }
+  a {
+    color: #000f31;
+  }
 }
 
 .banner-slider {
@@ -347,14 +351,15 @@ section {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 100%;
+      width: auto;
+      max-width: initial;
       height: 100%;
     }
     &>span {
       position: absolute;
       right: 0;
       width: 219px;
-      bottom: 4px;
+      bottom: 0;
       padding: 30px 150px 30px 30px;
       background: #fff;
       color: #000f31;
@@ -372,6 +377,7 @@ section {
 }
 
 .next-screen {
+  display: none;
   position: fixed;
   bottom: 63px;
   left: 50%;
@@ -396,6 +402,7 @@ section {
   &__text {
     flex-shrink: 1;
     flex-grow: 1;
+    max-width: 100%;
     &-block {
       color: #5a5a5a;
       font-family: 'ProximaNova-Bold', Serif;
@@ -430,7 +437,6 @@ section {
 }
 
 .our-works {
-  padding: 180px 0 0;
   background: url(../images/background-3.png) 100% no-repeat;
   .slick-center {
     -webkit-transform: scale(1.25);
@@ -471,9 +477,13 @@ section {
         left: 0;
         right: 0;
         bottom: 0;
-        padding: 67px 21px 0;
+        padding: 20px;
         text-align: center;
         will-change: transform;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         &>span {
           color: #ffffff;
           font-family: "Montserrat-ExtraLight", serif;
